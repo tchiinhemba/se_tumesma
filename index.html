@@ -11,8 +11,14 @@
       href="./node_modules/bootstrap/compiler/bootstrap.css"
     />
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="./public/styles/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="./public/styles/owl-carousel/owl.theme.default.css">
+    <link
+      rel="stylesheet"
+      href="./public/styles/owl-carousel/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/styles/owl-carousel/owl.theme.default.css"
+    />
     <!-- Local Styles -->
     <link rel="stylesheet" href="./public/styles/css/style.css" />
   </head>
@@ -33,7 +39,9 @@
         <div class="collapse navbar-collapse justify-content-end" id="navList">
           <ul class="navbar-nav">
             <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">MARCAS</a></li>
+            <li class="nav-item">
+              <a href="#marcas" class="nav-link d-none d-md-block">MARCAS</a>
+            </li>
             <li class="nav-item">
               <a href="#" class="nav-link">+PROCURADOS</a>
             </li>
@@ -70,33 +78,47 @@
           <img src="./public/images/slide-4.png" class="d-block w-100" />
         </div>
       </div>
-    </div>
 
-    <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <a
+        href="#carouselControls"
+        class="carousel-control-prev"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true"></span>
         <span class="sr-only">anterior</span>
-    </a>
+      </a>
 
-    <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a
+        href="#carouselControls"
+        class="carousel-control-next"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon d-none d-md-block" aria-hidden="true"></span>
         <span class="sr-only">Avançar</span>
-    </a>
+      </a>
+    </div>
 
     <div class="container">
       <div class="row">
         <div class="col-12">
-            <h3 class="display-4 text-center mt-4">MARCAS</h3>
-          <div class="owl-carousel owl-theme mt-5">
-            <div class="item"><img src="./public/svgs/pantene.svg"/></div>
-            <div class="item"><img src="./public/svgs/salonline.svg"/></div>
-            <div class="item"><img src="./public/svgs/aveda.svg"></div>
-            <div class="item"><img src="./public/svgs/loreal.svg"></div>
-            <div class="item"><img src="./public/svgs/neutrogena.svg"></div>
-            <div class="item"><img src="./public/svgs/novex.svg"></div>
-            <div class="item"><img src="./public/svgs/clairol.svg"></div>
+          <h3 class="display-4 text-center mt-4 d-none d-md-block" id="marcas">
+            MARCAS
+          </h3>
+          <div class="owl-carousel owl-theme mt-4 d-none d-md-block">
+            <div class="item"><img src="./public/svgs/pantene.svg" /></div>
+            <div class="item"><img src="./public/svgs/salonline.svg" /></div>
+            <div class="item"><img src="./public/svgs/aveda.svg" /></div>
+            <div class="item"><img src="./public/svgs/loreal.svg" /></div>
+            <div class="item"><img src="./public/svgs/neutrogena.svg" /></div>
+            <div class="item"><img src="./public/svgs/novex.svg" /></div>
+            <div class="item"><img src="./public/svgs/clairol.svg" /></div>
           </div>
         </div>
       </div>
+
+      <div class="row"></div>
     </div>
 
     <script src="./node_modules/jquery/dist/jquery.js"></script>
